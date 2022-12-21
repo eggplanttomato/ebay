@@ -9,6 +9,7 @@
     body{
         margin: 0;
         padding:0;
+        font-family: Arial, Helvetica, sans-serif;
     }
 .logo{
     width: 125px;
@@ -22,27 +23,202 @@
     padding-right: 100px;
 }
 .head-img{
-  background: url("vacations.jpg");
-display: block;
-margin: 0 auto;
-max-height:250px;
+background-image: url("https://i.ibb.co/jZs8BC0/vacations.jpg");
+display: flex;
+justify-content: center;
+height:350px;
+/* max-height:250px; */
 width: 100%;
-object-fit: cover;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.transbox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  background-color: rgb(131, 164, 170);
+  border: 1px solid black;
+  opacity: 0.85;
+  height: 70px;
+  width: 400px;
+  /* text-align: center; */
+}
+.transbox p{
+    font-weight: 900;
+    color: white;
+    margin-top:3px;
+    margin-bottom: 0;
+}
+.red-button{
+    background-color: rgb(255,51,255);
+    color: white;
+    border: none;
 }
 .intro-div{
-    background-color: rgb(236,245,251);
+    background-color: rgb(236, 245, 251);
+    text-align: center;
+    padding-top: 10px;
 }
 h3{
     margin:0;
 }
+p{
+    font-size: 16px;
+    line-height: 150%;
+}
+.specs, .description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.description{
+    background-color: rgb(236, 245, 251);
+}
+.spec-div, .description-text{
+    width: 50%;
+}
+.spec-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.description-text{
+    padding: 20px 10px;
+}
+.spec-img img, .description img{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+    object-fit:  contain;
+}
+
+.description-image-double{
+    background: url("https://i.ibb.co/1m5WrcP/water.jpg" ), linear-gradient(to bottom, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    height: 250px !important;
+    width: 400px;
+    /* object-fit:  fill; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.double{
+    padding-bottom: 20px;
+}
+.bottom-img{
+background-image: url("https://i.ibb.co/h7bCQrS/worldtravel.jpg");
+display: flex;
+justify-content: center;
+height:350px;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.transbox, .transbox-bottom{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  background-color: rgb(131, 164, 170);
+  border: 1px solid black;
+  opacity: 0.85;
+  height: 70px;
+  width: 400px;
+  /* text-align: center; */
+}
+.transbox-bottom{
+    height: 250px !important;
+    width: 70% !important;
+     text-align: center;
+     background-color: rgb(232, 240, 243);
+     opacity: .75;
+     text-overflow: ellipsis;
+}
+hr{
+   border: 1px solid black;
+   width: 50%;
+   text-align:left;
+   margin-left:0;
+   }
+   @media screen and (max-width: 630px)  {
+    .bottom-img{
+        height:450px;
+    }
+    .transbox-bottom{
+        height:350px !important;
+    }
+   }
+  
+   }
 </style>
 </head>
 <body>
     <div class="header">
-    <div><img class="logo" src="C:\Users\happy\Documents\FREEMOTE\EBAY\tournity-logo.png" alt=""></div>
+    <div><img class="logo" src="https://i.ibb.co/C6D7HP0/tournity-logo.png" alt="tournity-logo" border="0"></div>
     <div><p>100% Original || High Quality || Fast Shipping</p> </div>
     </div>
-    <div class="head-img"></div>
-    <div class="intro-div"><h3>Tournity Travel Neck Wallet / Passport Holder with RFID Blocking. Condition is Brand New. Shipped with USPS First Class Package.</h3></div>
+    <div class="head-img">
+        <div class="transbox">
+        <p>Improve Your Traveling Experiences!</p>
+        <button class="red-button"><h3>Shop Now</h3></button>
+        </div>
+    </div>
+    <div class="intro-div"><h3>Tournity Travel Neck Wallet / Passport Holder with RFID Blocking.</h3>
+    <p>Condition is Brand New. Shipped with USPS First Class Package.</p>
+    </div>
+    <div class="specs">
+       <div class="spec-div">
+         <ul>
+            <li><p>Stealthy if worn under clothes. Low-key if worn outside.</p></li>
+            <li><p>Rip-Stop Nylon with RFID Blocking Liner Material is Secure and Strong, Yet Soft and less than 2 Ounces Light for Maximum Comfort</p></li>
+            <li><p>Wear Around the Neck or Cross Shoulder with long and Adjustable Neck Strap. Stay-flat buckle.</p></li>
+            <li><p>Four Main Compartments, 2 Credit Card Slots</p></li>
+            <li><p>Includes Free Cloth Storage Envelope</p></li>
+            <li><p>8” Long x 5.5” Wide x 0.2” Thick</p></li>
+        </ul>
+        </div>
+        <div class="spec-img"><img src="https://i.ibb.co/fSR3qXS/2-Main-pockets.gif" alt=""></div>
+    </div>
+    <div class="description">
+        <div class="description-img"><img src="https://i.ibb.co/nbNrDcF/airport.jpg" alt="airport"></div>
+        <div class="description-text">
+            <h4>All Your Things Falling Off Through Your Holder, Wallet, While At The Airport? </h4>
+            <hr>
+            <p>We get the picture. Trying to pick up all your scattered things from the airport floor is a terrible thing, for any traveler.</p>
+            <p>This is why we created the most incredible, black ticket-passport holder you will ever get your hands on!</p>
+        </div>
+    </div>
+    <div class="description">
+                <div class="description-text">
+                    <h4>Secure Pockets</h4>
+                    <hr>
+            <p>Starting with capacity abilities, your personalized new travel holder is divided into 4 separate, large, easy to reach compartments.</p>
+            <p>Then you cannot miss the most secure zipper pockets on the outside – which intend to keep your things INSIDE your holder. Take With You All You Need No Matter Where You Go!</p>
+                </div>
+                <div class="description-img"><img src="https://i.ibb.co/0QN2MVq/lostwallet.jpg" alt="lostwallet" border="0"></div>
+     </div> 
+     <div class="description double">
+        <div class="description-image-double"></div>
+        <div class="description-text">
+            <h4>Light, Sturdy, Water Resistant</h4>
+            <hr>
+            <p>The holder is made of ripstop nylon, very lightweight, water resistant & has RFID blocking liner for all pockets.</p>
+            <p> It is made to be water resistant so that you will never have to worry about your personal items getting wet, when you are caught in the rain or if any liquid accidentally drops on it.</p>
+        </div>
+    </div>   
+    <div class="head-img">  
+    <div class="bottom-img">
+        
+    <div class="transbox-bottom">
+        <h3>Add To Your Cart Now To Improve Your Traveling Peace of Mind!</h3>
+        <p>You may be a business man, a traveler,  a photographer, a reporter – just anyone. Your holder is suitable for all uses. You can store maps, documents, your personal items, your phone, your id, your credit cards or cash – you name it! – No fear of losing your stuff ever again! </p>
+    </div>
+</div> 
+</div>
 </body>
 </html>
